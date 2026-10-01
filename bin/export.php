@@ -41,12 +41,13 @@ if ($projectId <= 0) {
 }
 
 $rootDir = dirname(__DIR__);
+
 if (is_file($rootDir . '/.env')) {
     Dotenv::createImmutable($rootDir)->load();
 }
 
-$baseUrl = getenv('VIKUNJA_URL') ?: null;
-$token   = getenv('VIKUNJA_TOKEN') ?: null;
+$baseUrl = ($_ENV['VIKUNJA_URL'] ?? '') ?: null;
+$token   = ($_ENV['VIKUNJA_TOKEN'] ?? '') ?: null;
 
 if ($baseUrl === null || $token === null) {
     fail('VIKUNJA_URL and VIKUNJA_TOKEN must be set (see .env.example).');
