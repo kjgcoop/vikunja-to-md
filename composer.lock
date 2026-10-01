@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df9bba9d869361c803a914105166c059",
+    "content-hash": "6df6002f571ff797437d33735c646852",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -401,16 +401,16 @@
         },
         {
             "name": "kjgcoop/vikunja-api",
-            "version": "dev-claude/wonderful-shannon-bczbxo",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kjgcoop/vikunja-api.git",
-                "reference": "3335ac28cab687ab98a234e992498666b8c93837"
+                "reference": "14d73d004a0fc41f024c753a9e007e0399068411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kjgcoop/vikunja-api/zipball/3335ac28cab687ab98a234e992498666b8c93837",
-                "reference": "3335ac28cab687ab98a234e992498666b8c93837",
+                "url": "https://api.github.com/repos/kjgcoop/vikunja-api/zipball/14d73d004a0fc41f024c753a9e007e0399068411",
+                "reference": "14d73d004a0fc41f024c753a9e007e0399068411",
                 "shasum": ""
             },
             "require": {
@@ -426,25 +426,16 @@
                     "Kjgcoop\\Vikunja\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Kjgcoop\\Vikunja\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "phpunit --testsuite Unit"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
             "description": "Minimal PHP wrapper for the Vikunja REST API v1",
             "support": {
-                "source": "https://github.com/kjgcoop/vikunja-api/tree/claude/wonderful-shannon-bczbxo",
-                "issues": "https://github.com/kjgcoop/vikunja-api/issues"
+                "issues": "https://github.com/kjgcoop/vikunja-api/issues",
+                "source": "https://github.com/kjgcoop/vikunja-api/tree/v1.1.0"
             },
-            "time": "2026-10-01T04:26:56+00:00"
+            "time": "2026-10-01T05:35:33+00:00"
         },
         {
             "name": "league/html-to-markdown",
@@ -2989,11 +2980,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "kjgcoop/vikunja-api": 20
-    },
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.1"
